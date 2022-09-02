@@ -27,6 +27,7 @@ group :development, :test do
   gem 'cpf_faker'
   gem 'rubycritic', require: false
   gem 'simplecov'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
