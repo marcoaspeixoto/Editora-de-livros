@@ -6,6 +6,6 @@ RSpec.describe Book, type: :model do
   end
 
   describe 'validations' do
-    xit { should validate_presence_of(:published_at) }
+    it { should validate_presence_of(:published_at) }
   end
 end
