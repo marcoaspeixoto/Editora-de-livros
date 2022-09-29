@@ -5,5 +5,10 @@
   <%= @assembly.name %>
 </p>
 
+<p>
+  <strong>Published at:</strong>
+  <%= @assembly.book.published_at %>
+</p>
+
 <%= link_to 'Edit', edit_assembly_path(@assembly) %> |
 <%= link_to 'Back', assemblies_path %>
