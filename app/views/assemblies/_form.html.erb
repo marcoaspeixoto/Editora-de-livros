@@ -1,0 +1,16 @@
+
+<%= simple_form_for(@assembly) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.association :book, collection: Book.all.map { |b| [b.published_at, b.id]} %>
+    <%= f.label :part %>
+    <%= f.collection_check_boxes :part_ids, Part.all, :id, :part_number %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

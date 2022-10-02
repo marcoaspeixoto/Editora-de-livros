@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @assembly.name %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @assembly.book.published_at %>
+</p>
+
+<p>
+  <strong>Part:</strong>
+  <% @assembly.parts.each do |part| %>
+    <%= part.part_number %>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_assembly_path(@assembly) %> |
+<%= link_to 'Back', assemblies_path %>
