@@ -7,6 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Published at</th>
+      <th>Part number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,9 @@
       <tr>
         <td><%= assembly.name %></td>
         <td><%= assembly.book.published_at %></td>
+        <% assembly.parts.each do |part| %>
+          <td><%= part.part_number %></td>
+        <% end %>
         <td><%= link_to 'Show', assembly %></td>
         <td><%= link_to 'Edit', edit_assembly_path(assembly) %></td>
         <td><%= link_to 'Destroy', assembly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
