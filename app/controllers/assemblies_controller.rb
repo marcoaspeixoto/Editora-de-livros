@@ -1,5 +1,6 @@
 class AssembliesController < ApplicationController
   before_action :set_assembly, only: %i[ show edit update destroy ]
+  skip_before_action :verify_authenticity_token
 
   # GET /assemblies or /assemblies.json
   def index
@@ -65,6 +66,6 @@ class AssembliesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def assembly_params
-      params.require(:assembly).permit(:name)
+      params.require(:assembly).permit(:name, :book_id)
     end
 end
