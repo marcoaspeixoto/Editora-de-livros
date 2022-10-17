@@ -5,5 +5,10 @@
   <%= @supplier.name %>
 </p>
 
+<p>
+  <strong>Cnpj:</strong>
+  <%= @supplier.cnpj %>
+</p>
+
 <%= link_to 'Edit', edit_supplier_path(@supplier) %> |
 <%= link_to 'Back', suppliers_path %>
