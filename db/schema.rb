@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_18_192125) do
+ActiveRecord::Schema.define(version: 2022_10_18_193254) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "account_number"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2022_10_18_192125) do
     t.integer "supplier_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
     t.index ["supplier_id"], name: "index_parts_on_supplier_id"
   end
 
