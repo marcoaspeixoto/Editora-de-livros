@@ -8,4 +8,8 @@ RSpec.describe Account, type: :model do
   describe 'validations' do
     it { should validate_presence_of(:account_number) }
   end
+
+  describe 'validations' do
+    it { should validate_presence_of(:digit) }
+  end
 end
