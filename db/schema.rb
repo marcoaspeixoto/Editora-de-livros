@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_18_184356) do
+ActiveRecord::Schema.define(version: 2022_10_18_185558) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "account_number"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2022_10_18_184356) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "cpf"
   end
 
   create_table "books", force: :cascade do |t|
