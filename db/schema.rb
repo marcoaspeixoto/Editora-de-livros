@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_24_013826) do
+ActiveRecord::Schema.define(version: 2022_10_19_182543) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "account_number"
     t.integer "supplier_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "digit"
     t.index ["supplier_id"], name: "index_accounts_on_supplier_id"
   end
 
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 2022_09_24_013826) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "cpf"
   end
 
   create_table "books", force: :cascade do |t|
@@ -46,6 +48,8 @@ ActiveRecord::Schema.define(version: 2022_09_24_013826) do
     t.date "published_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "isbn"
+    t.string "title"
     t.index ["author_id"], name: "index_books_on_author_id"
   end
 
@@ -54,6 +58,8 @@ ActiveRecord::Schema.define(version: 2022_09_24_013826) do
     t.integer "supplier_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+    t.decimal "value"
     t.index ["supplier_id"], name: "index_parts_on_supplier_id"
   end
 
@@ -61,6 +67,7 @@ ActiveRecord::Schema.define(version: 2022_09_24_013826) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "cnpj"
   end
 
   add_foreign_key "accounts", "suppliers"

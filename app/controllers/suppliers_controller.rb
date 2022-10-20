@@ -1,5 +1,6 @@
 class SuppliersController < ApplicationController
   before_action :set_supplier, only: %i[ show edit update destroy ]
+  skip_before_action :verify_authenticity_token
 
   # GET /suppliers or /suppliers.json
   def index
@@ -65,6 +66,6 @@ class SuppliersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def supplier_params
-      params.require(:supplier).permit(:name)
+      params.require(:supplier).permit(:name, :cnpj)
     end
 end
