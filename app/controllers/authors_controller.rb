@@ -1,5 +1,6 @@
 class AuthorsController < ApplicationController
   before_action :set_author, only: %i[ show edit update destroy ]
+  skip_before_action :verify_authenticity_token
 
   # GET /authors or /authors.json
   def index
@@ -65,6 +66,6 @@ class AuthorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def author_params
-      params.require(:author).permit(:name)
+      params.require(:author).permit(:name, :cpf)
     end
 end

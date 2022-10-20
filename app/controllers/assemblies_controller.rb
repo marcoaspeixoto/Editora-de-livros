@@ -1,5 +1,6 @@
 class AssembliesController < ApplicationController
   before_action :set_assembly, only: %i[ show edit update destroy ]
+  skip_before_action :verify_authenticity_token
 
   # GET /assemblies or /assemblies.json
   def index
@@ -21,7 +22,7 @@ class AssembliesController < ApplicationController
 
   # POST /assemblies or /assemblies.json
   def create
-    @assembly = Assembly.new(params.require(:assembly).permit(:name, :book_id, part_ids: []))
+    @assembly = Assembly.new(assembly_params)
 
     respond_to do |format|
       if @assembly.save
@@ -37,7 +38,7 @@ class AssembliesController < ApplicationController
   # PATCH/PUT /assemblies/1 or /assemblies/1.json
   def update
     respond_to do |format|
-      if @assembly.update(params.require(:assembly).permit(:name, :book_id, part_ids: []))
+      if @assembly.update(assembly_params)
         format.html { redirect_to assembly_url(@assembly), notice: "Assembly was successfully updated." }
         format.json { render :show, status: :ok, location: @assembly }
       else
@@ -65,6 +66,6 @@ class AssembliesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def assembly_params
-      params.require(:assembly).permit(:name)
+      params.require(:assembly).permit(:name, :book_id, part_ids: [])
     end
 end
