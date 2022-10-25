@@ -23,7 +23,6 @@ class AccountsController < ApplicationController
   # POST /accounts or /accounts.json
   def create
     @account = Account.new(account_params)
-    byebug
 
     respond_to do |format|
       if @account.save
