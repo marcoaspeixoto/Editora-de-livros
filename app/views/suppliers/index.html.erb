@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<%= form_tag(suppliers_path, method: :get) do %>
+  <%= text_field_tag 'search', nil, placeholder: 'Entre com o termo...' %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <h1>Suppliers</h1>
 
 <table>
