@@ -4,9 +4,8 @@ class Book < ApplicationRecord
     validates_presence_of :published_at
     validate :validate_isbn
 
-    def self.search(query)
-        where("title like ?", "%#{query}%")
-    end
+    scope :search_by_title, ->(query) { where("title like ?", "%#{query}%") }
+    scope :search_by_author_name, ->(query) { joins(:author).where("LOWER(authors.name) LIKE ?", "%#{query.downcase}%") }
 
     private
 
