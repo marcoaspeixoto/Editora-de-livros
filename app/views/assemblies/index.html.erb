@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Published at</th>
-      <th>Part number</th>
+      <th>Book title</th>
+      <th>Part name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
     <% @assemblies.each do |assembly| %>
       <tr>
         <td><%= assembly.name %></td>
-        <td><%= assembly.book.published_at %></td>
+        <td><%= assembly.book.title %></td>
         <% assembly.parts.each do |part| %>
-          <td><%= part.part_number %></td>
+          <td><%= part.name %></td>
         <% end %>
         <td><%= link_to 'Show', assembly %></td>
         <td><%= link_to 'Edit', edit_assembly_path(assembly) %></td>

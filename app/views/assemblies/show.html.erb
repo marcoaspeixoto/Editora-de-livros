@@ -6,14 +6,14 @@
 </p>
 
 <p>
-  <strong>Published at:</strong>
-  <%= @assembly.book.published_at %>
+  <strong>Book title:</strong>
+  <%= @assembly.book.title %>
 </p>
 
 <p>
-  <strong>Part:</strong>
+  <strong>Part name:</strong>
   <% @assembly.parts.each do |part| %>
-    <%= part.part_number %>
+    <%= part.name %>
   <% end %>
 </p>
 
