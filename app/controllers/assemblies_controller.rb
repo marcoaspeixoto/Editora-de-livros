@@ -4,7 +4,11 @@ class AssembliesController < ApplicationController
 
   # GET /assemblies or /assemblies.json
   def index
-    @assemblies = Assembly.all
+    if params[:search]
+      @assemblies = Assembly.search(params[:search])
+    else
+      @assemblies = Assembly.all
+    end
   end
 
   # GET /assemblies/1 or /assemblies/1.json
