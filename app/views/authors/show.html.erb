@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Id:</strong>
+  <%= @author.id %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @author.name %>
 </p>
@@ -9,6 +14,8 @@
   <strong>Cpf:</strong>
   <%= @author.cpf %>
 </p>
+
+<hr>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>
