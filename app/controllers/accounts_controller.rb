@@ -4,7 +4,11 @@ class AccountsController < ApplicationController
 
   # GET /accounts or /accounts.json
   def index
-    @accounts = Account.all
+    if params[:search]
+      @accounts = Account.search(params[:search])
+    else
+      @accounts = Account.all
+    end
   end
 
   # GET /accounts/1 or /accounts/1.json

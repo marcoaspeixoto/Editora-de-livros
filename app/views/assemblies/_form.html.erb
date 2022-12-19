@@ -5,9 +5,9 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.association :book, collection: Book.all.map { |b| [b.published_at, b.id]} %>
+    <%= f.association :book, collection: Book.all.map { |b| [b.title, b.id]} %>
     <%= f.label :part %>
-    <%= f.collection_check_boxes :part_ids, Part.all, :id, :part_number %>
+    <%= f.collection_check_boxes :part_ids, Part.all, :id, :name %>
   </div>
 
   <div class="form-actions">

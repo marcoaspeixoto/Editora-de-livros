@@ -4,6 +4,10 @@ class Supplier < ApplicationRecord
   validates_presence_of :name, :cnpj
   validate :validate_cnpj
 
+  def self.search(query)
+    where("name like ?", "%#{query}%")
+  end
+
   private
 
   def validate_cnpj

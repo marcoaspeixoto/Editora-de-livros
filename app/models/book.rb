@@ -4,6 +4,14 @@ class Book < ApplicationRecord
     validates_presence_of :published_at
     validate :validate_isbn
 
+    def self.search_by_title(query)
+        where("title like ?", "%#{query}%")
+    end
+
+    def self.search_by_author_name(query)
+        joins(:author).where("lower(authors.name) like ?", "%#{query}%")
+    end
+
     private
 
     def validate_isbn

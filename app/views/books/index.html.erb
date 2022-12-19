@@ -2,6 +2,16 @@
 
 <h1>Books</h1>
 
+<%= form_tag(books_path, method: :get) do %>
+  Filtrar por:
+  <%= radio_button_tag 'search_type', 'book_title', true %>
+  Título
+  <%= radio_button_tag 'search_type', 'author_name' %>
+  Nome (Autor)
+  <%= text_field_tag 'search', nil, placeholder: 'Entre com o termo...' %>
+  <%= submit_tag "Filtrar" %>
+<% end %>
+
 <table>
   <thead>
     <tr>
