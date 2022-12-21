@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Author</h2>
+<h2>Author:</h2>
 
 <p>
   <strong>Id:</strong>
@@ -19,7 +19,7 @@
 
 <hr>
 
-<h2>Author's books</h2>
+<h2>Author's books:</h2>
 
 <table>
   <thead>
@@ -41,6 +41,16 @@
   <% end %>
   </tbody>
 </table>
+
+<hr>
+
+<strong>Total number of published books: </strong>
+
+<%= @books.count %>
+
+<br>
+<br>
+<br>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>
