@@ -15,6 +15,8 @@ gem 'net-smtp'
 gem 'simple_form'
 gem "cpf_cnpj"
 gem 'isbn-tools', '~> 0.1.0'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

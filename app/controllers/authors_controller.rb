@@ -10,6 +10,12 @@ class AuthorsController < ApplicationController
   # GET /authors/1 or /authors/1.json
   def show
     @books = Book.where("author_id = #{params[:id]}") if params[:id]
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Report Author id:#{@author.id}", template: "authors/relatorio.html.erb"   # Excluding ".pdf" extension.
+      end
+    end
   end
 
   # GET /authors/new
