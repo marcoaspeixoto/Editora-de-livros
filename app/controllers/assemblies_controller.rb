@@ -13,6 +13,12 @@ class AssembliesController < ApplicationController
 
   # GET /assemblies/1 or /assemblies/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Report Assembly id:#{@assembly.id}", template: "assemblies/relatorio.pdf.erb"   # Excluding ".pdf" extension.
+      end
+    end
   end
 
   # GET /assemblies/new

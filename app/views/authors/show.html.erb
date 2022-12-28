@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<h1 style="text-align: center">Auhtor's Report</h1>
+
+<hr>
+
 <h2>Author:</h2>
 
 <p>
@@ -47,12 +51,13 @@
 
 <%= @books.count %>
 
+<hr>
+
 <br>
+
+<%= link_to 'Back', authors_path %>
+
 <br>
 <br>
 
-<%= link_to 'Edit', edit_author_path(@author) %> |
-<%= link_to 'Back', authors_path %>
-<br>
-<br>
 <%= link_to 'Generate report in pdf', author_path(@author, format: :pdf) %>
