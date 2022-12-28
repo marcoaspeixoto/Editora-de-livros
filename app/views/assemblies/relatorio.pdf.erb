@@ -1,6 +1,24 @@
-<p id="notice"><%= notice %></p>
+<style>
+    h1 {
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        background: #FFFFF0;
+        margin: auto;
+    }
 
-<h1 style="text-align: center">Assembly Report</h1>
+    td {
+        border: 1px solid black;
+    }
+
+    th {
+        border: 1px solid black;
+        background: #d0d0d0;
+    }
+</style>
+
+<h1>Assembly Report</h1>
 
 <hr>
 
@@ -58,10 +76,10 @@
 <table>
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Part number</th>
-    <th>Value</th>
-    <th>Supplier</th>
+    <th style="width:300px">Name</th>
+    <th style="width:200px">Part number</th>
+    <th style="width:200px">Value</th>
+    <th style="width:400px">Supplier</th>
   </tr>
   </thead>
 
@@ -90,12 +108,3 @@
 <%= @assembly.parts.sum(:value) %>
 
 <hr>
-
-<br>
-
-<%= link_to 'Back', assemblies_path %>
-
-<br>
-<br>
-
-<%= link_to 'Generate report in pdf', assembly_path(@assembly, format: :pdf) %>
