@@ -25,7 +25,7 @@
 
 <hr>
 
-<h2>Book:</h2>
+<h2>Assembly book:</h2>
 
 <p>
   <strong>Title:</strong>
@@ -49,7 +49,7 @@
 
 <hr>
 
-<h2>Parts:</h2>
+<h2>Assembly parts:</h2>
 
 <table>
   <thead>
@@ -78,6 +78,12 @@
 <strong>Total assembly parts: </strong>
 
 <%= @assembly.parts.count %>
+
+<hr>
+
+<strong>Total cost of assembly: </strong>
+
+<%= @assembly.parts.sum(:value) %>
 
 <hr>
 
