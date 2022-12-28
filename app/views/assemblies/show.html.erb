@@ -49,7 +49,31 @@
 
 <hr>
 
+<h2>Parts:</h2>
 
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Part number</th>
+    <th>Value</th>
+    <th>Supplier</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @assembly.parts.each do |part| %>
+    <tr>
+      <td><%= part.name %></td>
+      <td><%= part.part_number %></td>
+      <td><%= part.value %></td>
+      <td><%= part.supplier.name %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<hr>
 
 <%= link_to 'Edit', edit_assembly_path(@assembly) %> |
 <%= link_to 'Back', assemblies_path %>
