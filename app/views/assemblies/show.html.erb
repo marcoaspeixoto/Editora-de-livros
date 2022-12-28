@@ -23,6 +23,33 @@
   <% end %>
 </p>
 
+<hr>
+
+<h2>Book:</h2>
+
+<p>
+  <strong>Title:</strong>
+  <%= @assembly.book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @assembly.book.author.name %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @assembly.book.published_at %>
+</p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @assembly.book.isbn %>
+</p>
+
+<hr>
+
+
 
 <%= link_to 'Edit', edit_assembly_path(@assembly) %> |
 <%= link_to 'Back', assemblies_path %>
