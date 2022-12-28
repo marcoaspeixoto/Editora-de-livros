@@ -1,6 +1,24 @@
-<p id="notice"><%= notice %></p>
+<style>
+    h1 {
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        background: #FFFFF0;
+        margin: auto;
+    }
 
-<h1 style="text-align: center">Auhtor's Report</h1>
+    td {
+        border: 1px solid black;
+    }
+
+    th {
+        border: 1px solid black;
+        background: #d0d0d0;
+    }
+</style>
+
+<h1> Author's Report</h1>
 
 <hr>
 
@@ -28,9 +46,9 @@
 <table>
   <thead>
   <tr>
-    <th>Title</th>
-    <th>Published at</th>
-    <th>Isbn</th>
+    <th style="width:400px">Title</th>
+    <th style="width:180px">Published at</th>
+    <th style="width:200px">Isbn</th>
   </tr>
   </thead>
 
@@ -52,12 +70,3 @@
 <%= @books.count %>
 
 <hr>
-
-<br>
-
-<%= link_to 'Back', authors_path %>
-
-<br>
-<br>
-
-<%= link_to 'Generate report in pdf', author_path(@author, format: :pdf) %>
