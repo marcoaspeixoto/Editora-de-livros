@@ -75,5 +75,11 @@
 
 <hr>
 
+<strong>Total assembly parts: </strong>
+
+<%= @assembly.parts.count %>
+
+<hr>
+
 <%= link_to 'Edit', edit_assembly_path(@assembly) %> |
 <%= link_to 'Back', assemblies_path %>
