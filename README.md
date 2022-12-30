@@ -2,11 +2,9 @@
 
 ## Índice
 
-* [Título e Imagem de capa](#Título-e-Imagem-de-capa)
 * [Badges](#badges)
 * [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-Projeto)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
@@ -32,7 +30,7 @@
 Trabalho de desenvolvimento da mentoria Super Desenvolvedor da DesenvolvendoMe.
 Sistema de gestão de editora de livros com um CRUD que permite o cadastro de autores, livros, fornecedores, contas dos fornecedores e montagens
 
-Etapas de desenvolvimento realizadas abaixo:
+Etapas de desenvolvimento realizadas neste projeto:
 
 1. CRUDs
    * Cadastrar Autores
@@ -41,15 +39,44 @@ Etapas de desenvolvimento realizadas abaixo:
    * Cadastrar Peças vinculando com Fornecedor
    * Cadastrar Montagens com várias Peças e vinculando com Livro
 
+
 2. APIs
-   1. Cadastrar Autores
-   2. Cadastrar Livros vinculando com Autor
-   3. Cadastrar Fornecedores com uma Conta
-   4. Cadastrar Peças vinculando com Fornecedor
-   5. Cadastrar Montagens com várias Peças e vinculando com Livro
+   * Cadastrar Autores
+   * Cadastrar Livros vinculando com Autor
+   * Cadastrar Fornecedores com uma Conta
+   * Cadastrar Peças vinculando com Fornecedor
+   * Cadastrar Montagens com várias Peças e vinculando com Livro
 
-3. dsdfsd
-    1. fdfsf
-    2. dfsdfsdf
-    3. dfssdf
 
+3. Regras
+   * Alterar
+      * Adicionar campo CNPJ em Fornecedor
+      * Adicionar campo Dígito Verificador em Conta
+      * Adicionar campo ISBN em Livro
+      * Adicionar campo CPF em Autor
+   * Calcular
+      * Dígito Verificador em Conta (pesquisar como calcular esse dígito verificador)
+   * Validar
+      * CNPJ em Fornecedor
+      * ISBN em Livro
+      * CPF em Autor
+
+
+4. Filtros
+   * Adicionar
+      * Campo título em Livro
+      * Campo nome em Peça
+   * Filtrar
+      * Fornecedor por nome
+      * Fornecedor por número da conta em Conta
+      * Livros por título
+      * Livros por nome em Autor
+      * Montagem por nome em Peça
+
+
+5. Relatórios
+   * Adicionar
+     * Campo valor em Peça
+   * Relatório
+     * Autor (com todas as informações com seu Livros (com todas as informações) e o total de Livros publicado
+     * Livro com a montagem (com todas as informações) com suas peças (com todas as informações), o total de peças e o custo total da montagem
