@@ -17,20 +17,15 @@
 
 ## Badges
 
+![GitHub issues](https://img.shields.io/github/issues-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub milestones](https://img.shields.io/github/milestones/all/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
-<p>
-
-<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub milestones" src="https://img.shields.io/github/milestones/all/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-<img alt="GitHub forks" src="https://img.shields.io/github/forks/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge">
-</p>
+![GitHub Repo stars](https://img.shields.io/github/stars/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
 
 ## Descrição do Projeto
 
