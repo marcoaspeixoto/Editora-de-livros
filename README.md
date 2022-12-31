@@ -1,19 +1,6 @@
-# Sistema de editora de livros
+<h1 style="text-align: center">:books: Sistema de editora de livros</h1>
 
-## Índice
-
-* [Badges](#badges)
-* [Índice](#índice)
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
-* [Licença](#licença)
-* [Conclusão](#conclusão)
-
-## Badges
+<div style="text-align: center">
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
@@ -25,7 +12,17 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/marcoaspeixoto/Missao-Vaga-DesenvolvendoMe?style=for-the-badge)
 
-## Descrição do Projeto
+</div>
+
+<h6 style="text-align: center">
+
+[Descrição do Projeto](#descrição-do-projeto) &nbsp;&nbsp; | &nbsp;&nbsp; [Tecnologias utilizadas](#tecnologias-utilizadas) &nbsp;&nbsp; | 
+[Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação) &nbsp;&nbsp; |   
+[Acesso ao Projeto](#acesso-ao-projeto) 
+
+</h6>
+
+## :pencil: Descrição do Projeto
 
 Trabalho de desenvolvimento da mentoria Super Desenvolvedor da DesenvolvendoMe.
 Sistema de gestão de editora de livros com um CRUD que permite o cadastro de autores, livros, fornecedores, contas dos fornecedores e montagens
@@ -80,3 +77,32 @@ Etapas de desenvolvimento realizadas neste projeto:
    * Relatório
      * Autor (com todas as informações com seu Livros (com todas as informações) e o total de Livros publicado
      * Livro com a montagem (com todas as informações) com suas peças (com todas as informações), o total de peças e o custo total da montagem
+
+
+## Tecnologias Utilizadas
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+* Ruby 3.1.2
+* Rails 6.1.6
+
+
+## Funcionalidades e Demonstração da Aplicação
+
+### Cálculo de Dígito Verificador em Conta
+
+![](../../../Vídeos/Dígito verificador.gif)
+
+
+
+### Filtros
+
+![](../../../Vídeos/Filtros.gif)
+
+
+
+### Validações
+
+![](../../../Vídeos/Validando cnpj.gif)
+
+
