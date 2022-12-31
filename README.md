@@ -79,7 +79,7 @@ Etapas de desenvolvimento realizadas neste projeto:
      * Livro com a montagem (com todas as informações) com suas peças (com todas as informações), o total de peças e o custo total da montagem
 
 
-## Tecnologias Utilizadas
+## :computer: Tecnologias Utilizadas
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -87,7 +87,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 * Rails 6.1.6
 
 
-## Funcionalidades e Demonstração da Aplicação
+## :hammer_and_wrench: Funcionalidades e Demonstração da Aplicação
 
 ### Cálculo de Dígito Verificador em Conta
 
