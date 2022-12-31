@@ -127,6 +127,12 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 <br>
 
+## :page_facing_up: Documentação da API
+Acesse a documentação da API através do link:  
+` https://lnkd.in/dCbTP_S7 ` 
+
+<br>
+
 ## :heavy_check_mark: Conclusão
 
 * **Student / Developer:** Marco Peixoto (https://github.com/marcoaspeixoto)
