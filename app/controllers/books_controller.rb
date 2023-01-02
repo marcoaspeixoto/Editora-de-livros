@@ -15,6 +15,7 @@ class BooksController < ApplicationController
 
   # GET /books/1 or /books/1.json
   def show
+    @assembly = Assembly.find(params[:id]) if params[:id]
   end
 
   # GET /books/new
