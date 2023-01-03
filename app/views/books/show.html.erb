@@ -48,7 +48,6 @@
 
 <p>
   <strong>Part(s) name(s):</strong>
-
   <% @assembly.parts.each do |part| %>
     <%= part.name %>
     <%= " |" unless part.name.eql?(@assembly.parts.last.name)%>
