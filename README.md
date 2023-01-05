@@ -81,7 +81,7 @@ Etapas de desenvolvimento realizadas neste projeto:
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 * Ruby 3.1.2
-* Rails 6.1.6
+* Rails 6.1.6.1
 
 <br>
 
@@ -103,7 +103,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Relatórios
 
-![Relatórios](https://user-images.githubusercontent.com/86198747/210155969-d3c7f2c2-d20d-49a3-b20a-318b21b80641.gif)
+![Relatório](https://user-images.githubusercontent.com/86198747/210867646-47d81a40-47ca-42c2-b3d4-44aaf7fa1798.gif)
+
+
 
 
 <br>
@@ -129,7 +131,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :page_facing_up: Documentação da API
 Acesse a documentação da API através do link:  
-` https://lnkd.in/dCbTP_S7 ` 
+https://lnkd.in/dCbTP_S7
 
 <br>
 
