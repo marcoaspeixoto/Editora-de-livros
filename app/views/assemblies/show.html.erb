@@ -1,15 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1 style="text-align: center">Assembly Report</h1>
-
-<hr>
-
-<h2>Assembly:</h2>
-
-<p>
-  <strong>Id:</strong>
-  <%= @assembly.id %>
-</p>
 <p>
   <strong>Name:</strong>
   <%= @assembly.name %>
@@ -27,75 +17,5 @@
   <% end %>
 </p>
 
-<hr>
-
-<h2>Assembly book:</h2>
-
-<p>
-  <strong>Title:</strong>
-  <%= @assembly.book.title %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @assembly.book.author.name %>
-</p>
-
-<p>
-  <strong>Published at:</strong>
-  <%= @assembly.book.published_at %>
-</p>
-
-<p>
-  <strong>Isbn:</strong>
-  <%= @assembly.book.isbn %>
-</p>
-
-<hr>
-
-<h2>Assembly parts:</h2>
-
-<table>
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Part number</th>
-    <th>Value</th>
-    <th>Supplier</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @assembly.parts.each do |part| %>
-    <tr>
-      <td><%= part.name %></td>
-      <td><%= part.part_number %></td>
-      <td><%= part.value %></td>
-      <td><%= part.supplier.name %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-
-<hr>
-
-<strong>Total assembly parts: </strong>
-
-<%= @assembly.parts.count %>
-
-<hr>
-
-<strong>Total cost of assembly: </strong>
-
-<%= @assembly.parts.sum(:value) %>
-
-<hr>
-
-<br>
-
+<%= link_to 'Edit', edit_assembly_path(@assembly) %> |
 <%= link_to 'Back', assemblies_path %>
-
-<br>
-<br>
-
-<%= link_to 'Generate report in pdf', assembly_path(@assembly, format: :pdf) %>

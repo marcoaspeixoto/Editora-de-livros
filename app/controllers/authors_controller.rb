@@ -13,7 +13,7 @@ class AuthorsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        render pdf: "Report Author id:#{@author.id}", template: "authors/relatorio.pdf.erb" # Excluding ".pdf" extension.
+        render pdf: "Report Author id:#{@author.id}", template: "authors/report.pdf.erb" # Excluding ".pdf" extension.
       end
     end
   end

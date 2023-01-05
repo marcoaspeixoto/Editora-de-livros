@@ -3,7 +3,7 @@
 <h1>Assemblies</h1>
 
 <%= form_tag(assemblies_path, method: :get) do %>
-  <%= text_field_tag 'search', nil, placeholder: 'Entre com o termo...' %>
+  <%= text_field_tag 'search', nil, placeholder: 'Digite o nome da peça...' %>
   <%= submit_tag "Filtrar" %>
 <% end %>
 
@@ -25,7 +25,7 @@
         <% assembly.parts.each do |part| %>
           <td><%= part.name %></td>
         <% end %>
-        <td><%= link_to 'Report', assembly %></td>
+        <td><%= link_to 'Show', assembly %></td>
         <td><%= link_to 'Edit', edit_assembly_path(assembly) %></td>
         <td><%= link_to 'Destroy', assembly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
