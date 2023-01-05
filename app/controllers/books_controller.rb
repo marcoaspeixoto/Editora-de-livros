@@ -16,6 +16,12 @@ class BooksController < ApplicationController
   # GET /books/1 or /books/1.json
   def show
     @assembly = Assembly.find(params[:id]) if params[:id]
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Report Book id:#{@book.id}", template: "books/report.pdf.erb"
+      end
+    end
   end
 
   # GET /books/new

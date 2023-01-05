@@ -1,4 +1,22 @@
-<p id="notice"><%= notice %></p>
+<style>
+    h1 {
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        background: #FFFFF0;
+        margin-right: auto;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+
+    th {
+        border: 1px solid black;
+        background: #d0d0d0;
+    }
+</style>
 
 <h1 style="text-align: center">Book Report</h1>
 
@@ -45,13 +63,13 @@
   <%= @assembly.name %>
 
 </p>
-
+<strong>Parts:</strong>
 <table>
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Part number</th>
-    <th>Value</th>
+    <th style="width:250px">Name</th>
+    <th style="width:150px">Part number</th>
+    <th style="width:100px">Value</th>
   </tr>
   </thead>
 
@@ -81,14 +99,3 @@
 </p>
 
 <hr>
-
-<br>
-<br>
-
-<%= link_to 'Edit book', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
-
-<br>
-<br>
-
-<%= link_to 'Generate report in pdf', book_path(@book, format: :pdf) %>
