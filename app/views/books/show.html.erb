@@ -46,14 +46,27 @@
 
 </p>
 
-<p>
-  <strong>Part(s) name(s):</strong>
-  <% @assembly.parts.each do |part| %>
-    <%= part.name %>
-    <%= " |" unless part.name.eql?(@assembly.parts.last.name)%>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Part number</th>
+    <th>Value</th>
+  </tr>
+  </thead>
 
+  <tbody>
+  <% @assembly.parts.each do |part| %>
+    <tr>
+      <td><%= part.name %></td>
+      <td><%= part.part_number %></td>
+      <td><%= part.value %></td>
+    </tr>
   <% end %>
-</p>
+  </tbody>
+</table>
+
+<hr>
 
 <br>
 <br>
