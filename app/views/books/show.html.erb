@@ -75,6 +75,13 @@
 
 <hr>
 
+<p>
+  <strong>Total cost of assembly: </strong>
+  <%= @assembly.parts.sum(:value) %>
+</p>
+
+<hr>
+
 <br>
 <br>
 
